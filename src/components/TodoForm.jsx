@@ -24,9 +24,7 @@ const TodoForm = ({ onAddTodo }) => {
 
   return (
     <form onSubmit={handleSubmit} className="p-6">
-      <h3 className="text-xl font-semibold text-white mb-4">
-        ✨ Create New Task
-      </h3>
+      <h3 className="text-xl font-semibold text-white mb-4">Create New Task</h3>
 
       <div className="space-y-4">
         <div>
