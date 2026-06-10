@@ -29,7 +29,7 @@ const TodoForm = ({ onAddTodo }) => {
       <div className="space-y-4">
         <div>
           <label className="block text-white/90 text-sm font-medium mb-2">
-            Title *
+            Title
           </label>
           <input
             type="text"
