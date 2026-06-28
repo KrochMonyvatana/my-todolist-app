@@ -9,8 +9,10 @@ const Sidebar = ({
   onDeleteGroup,
 }) => {
   return (
-    <div className="w-64 bg-black/30 backdrop-blur-xl text-white h-screen fixed left-0 top-0 overflow-y-auto border-r border-white/20">
-      <div className="p-4">
+    // REMOVED: fixed, w-64, left-0, top-0
+    // ADDED: responsive width, relative positioning
+    <div className="w-full md:w-64 bg-black/30 backdrop-blur-xl text-white relative md:fixed md:left-0 md:top-0 overflow-y-auto border-b md:border-b-0 md:border-r border-white/20 flex-shrink-0">
+      <div className="p-4 md:p-6">
         <h2 className="text-2xl font-bold mb-6 flex items-center gap-2 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">
           <FaFolder /> Todo Lists
         </h2>
@@ -18,7 +20,7 @@ const Sidebar = ({
         <div className="mb-6">
           <button
             onClick={onAddGroup}
-            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg"
+            className="w-full bg-gradient-to-r from-purple-500 to-pink-500 hover:from-purple-600 hover:to-pink-600 text-white font-semibold py-2 px-4 rounded-lg flex items-center justify-center gap-2 transition-all shadow-lg text-sm md:text-base"
           >
             <FaPlus size={14} /> New Group
           </button>
