@@ -12,6 +12,7 @@ A professional, feature-rich Task Management application built with React that h
 
 FEATURES
 
+
 Core Features:
 
 - Create new tasks with title, description, and priority
